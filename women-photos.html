@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/photos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="js/photos.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-background"></div>
+        <div class="navbar-logo">
+            <a href="index.html#home"><div id="navbar-logo-div"><img src="images/logo.jpg" id="navbar-logo" alt="Light City Foundation Logo"></div></a>
+        </div>
+        <nav class="nav-menu">
+            <ul class="navbar-links">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About Us</a></li>
+                <li><a href="index.html#programmes" class="nav-link">Our Programmes</a></li>
+                <li><a href="index.html#photos" class="nav-link active">Photos</a></li>
+                <!--<li><a href="index.html #success-stories" class="nav-link">Success Stories</a></li>-->
+                <li><a href="index.html#volunteer-form" class="nav-link">Extend your Support</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul> 
+        </nav>
+        
+        <button class="openbtn" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html#home" class="nav-link active">Home</a></li>
+            <a href="index.html#about" class="nav-link">About Us</a></li>
+            <a href="index.html#programmes" class="nav-link">Our Programmes</a></li>
+            <li><a href="index.html #photos" class="nav-link">Photos</a></li>
+            <!--<li><a href="index.html #success-stories" class="nav-link">Success Stories</a></li>-->
+            <a href="index.html#donation-form" class="nav-link">Extend your Support</a></li>
+            <!--<li><a href="index.html #registration" class="nav-link">Reg. Details</a></li>-->
+            <a href="index.html#contact" class="nav-link">Contact Us</a></li>
+        </div>
+         <a href="index.html#donation-form" target="_self" class="btn navbar-donate-btn animate-fadeIn delay-1"><i class="fas fa-hand-holding-heart"></i>Donate Now</a>
+    </nav>
+    <a href="https://forms.gle/JQYbBFXeaGEv5jW17" target="_blank" class="btn volunteer-btn delay-2"><i class="fas fa-hands-helping"></i>Join as Volunteer</a>
+    <a href="index.html #donation-form" target="_self" class="btn donate-btn animate-fadeIn delay-1"><i class="fas fa-hand-holding-heart"></i>Donate Now</a>
+    
+    <section class="photos-section">
+            <div class="photo-item">
+                <img src="images/women-1.jpg" alt="Education programme" style="width:100%; height:auto; display:block;">
+            </div>
+            
+
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img style="border:2px solid black"src="images/logo.jpg" alt="Light City Foundation">
+                    </div>
+                    <p>Empowering women and children through photos, healthcare, and sustainable development initiatives.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/light_city_foundation" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919920585124" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/@lightcityfoundation1367" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home"><i class="fas fa-arrow-right"></i> Home</a></li>
+                        <li><a href="index.html#about"><i class="fas fa-arrow-right"></i> About Us</a></li>
+                        <li><a href="index.html#programmes"><i class="fas fa-arrow-right"></i> Programmes</a></li>
+                         <li><a href="index.html#photos"><i class="fas fa-arrow-right"></i>Photos</a></li>
+                        <li><a href="index.html#volunteer-form"><i class="fas fa-arrow-right"></i> Extend Your Support</a></li>
+                        <!--<li><a href="index.html #registration"><i class="fas fa-arrow-right"></i> Registration</a></li>-->
+                        <li><a href="index.html#contact"><i class="fas fa-arrow-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; All Rights Reserved. Light City Foundation. 2026</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            //document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            //document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+</body>
+</html>

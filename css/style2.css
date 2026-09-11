@@ -1,0 +1,117 @@
+/* ================= TABLET STYLES ================= */
+@media (min-width: 601px) and (max-width: 992px) {
+    /* Navbar adjustments */
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .navbar-logo img {
+        height: 55px;
+    }
+    .navbar-donate-btn{
+        position:relative;
+        right:5rem;
+    }
+    .info .info-card .info-video{
+       width:90vw;
+    }
+    .info .info-card .info-details{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* Show hamburger button on tablet */
+    .openbtn {
+        display: inline-flex;
+        font-size: 22px;
+        cursor: pointer;
+        background-color: var(--primary-green);
+        color: white;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 8px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        z-index: 2000;
+    }
+
+    /* Hide normal navbar links on tablet */
+    .navbar-links {
+        display: none;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        height: 100%;
+        width: 0; /* closed by default */
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to top, var(--primary-yellow), var(--primary-green));
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 3000;
+    }
+
+    .sidebar a {
+        padding: 12px 20px;
+        font-size: 22px;
+        display: block;
+        color: var(--light-text);
+        transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+        color: var(--primary-green);
+        background: rgba(255,255,255,0.1);
+    }
+
+    .sidebar .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 36px;
+    }
+
+    /* Hero Section adjustments */
+    .hero-section {
+        min-height: 70vh;
+        padding: 3rem 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    /* Programmes & Photos - 2 per row on tablet */
+    .programmes-cards,
+    .photos-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .photos-card {
+        margin: auto;
+        height: auto;
+    }
+
+    /* Contact section - 2 per row */
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin: 0 1rem;
+    }
+
+    /* Footer stacked neatly */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+

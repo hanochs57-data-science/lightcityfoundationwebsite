@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/women.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="js/section.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-background"></div>
+        <div class="navbar-logo">
+            <a href="index.html#about"><div id="navbar-logo-div"><img src="images/logo.jpg" id="navbar-logo" alt="Light City Foundation Logo"></div></a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="index.html#home" class="nav-link">Home</a></li>
+            <li><a href="index.html#about" class="nav-link">About Us</a></li>
+            <li><a href="index.html#programmes" class="nav-link active">Our Programmes</a></li>
+            <li><a href="index.html#photos" class="nav-link">Photos</a></li>
+            <li><a href="index.html#volunteer-form" class="nav-link">Extend your Support</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul> 
+        <a href="#donation-form" target="_self" class="btn navbar-donate-btn delay-1"><i class="fas fa-hand-holding-heart"></i>Donate Now</a>  
+        <button class="openbtn" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html#home" class="nav-link active">Home</a></li>
+            <a href="index.html#about" class="nav-link">About Us</a></li>
+            <a href="index.html#programmes" class="nav-link">Our Programmes</a></li>
+            <li><a href="index.html #photos" class="nav-link">Photos</a></li>
+            <!--<li><a href="index.html #success-stories" class="nav-link">Success Stories</a></li>-->
+            <a href="index.html#donation-form" class="nav-link">Extend your Support</a></li>
+            <!--<li><a href="index.html #registration" class="nav-link">Reg. Details</a></li>-->
+            <a href="index.html#contact" class="nav-link">Contact Us</a></li>
+        </div>
+            
+    </nav>
+    <a href="https://forms.gle/JQYbBFXeaGEv5jW17" class="btn volunteer-btn delay-2"><i class="fas fa-hands-helping"></i>Join as Volunteer</a>
+    <a href="index.html#donation-form" target="_blank" class="btn donate-btn animate-fadeIn delay-1"><i class="fas fa-hand-holding-heart"></i>Donate Now</a>
+
+    <section class="women-section">
+        <div class="women-img">
+            <img src="images/women-1.jpg" alt="women Image">
+        </div>
+        <div class="women-info">
+            <h1>Women Empowerment</h1>
+            <p><i class="fas fa-bullseye"></i><span class="paragraph-header"> Our Mission:</span><br>Our mission is to envision and empower communities to take meaningful social action and create lasting change. We strive to equip young people with the knowledge and skills needed to make positive lifestyle choices and lead fulfilling lives.<br><br>
+                We are equally committed to supporting vulnerable women and children by providing access to counselling services, health and educational initiatives, and raising social and legal awareness. Through training, seminars, and counselling programs, we aim to build resilience, restore hope, and open pathways to a brighter, more secure future for all.<br><br>
+                <i class="fas fa-check"></i><span class="paragraph-header"> Our Programmes:</span>
+                <ul>
+                    <li>Conducted Medical Camp every month</li><br>
+                    <li>Conducted E shram Card and Health Card Camp</li><br>
+                    <li>Conducted PAN CARD Camp</li><br>
+                    <li>Electric Soldering training for women</li><br>
+                </ul>
+
+        </p>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img style="border:2px solid black"src="images/logo.jpg" alt="Light City Foundation">
+                    </div>
+                    <p>Empowering women and children through education, healthcare, and sustainable development initiatives.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/light_city_foundation" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919920585124" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/@lightcityfoundation1367" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home"><i class="fas fa-arrow-right"></i> Home</a></li>
+                        <li><a href="index.html#about"><i class="fas fa-arrow-right"></i> About Us</a></li>
+                        <li><a href="index.html#programmes"><i class="fas fa-arrow-right"></i> Programmes</a></li>
+                         <li><a href="index.html#photos"><i class="fas fa-arrow-right"></i>Photos</a></li>
+                        <li><a href="index.html#volunteer-form"><i class="fas fa-arrow-right"></i> Extend Your Support</a></li>
+                        <!--<li><a href="index.html #registration"><i class="fas fa-arrow-right"></i> Registration</a></li>-->
+                        <li><a href="index.html#contact"><i class="fas fa-arrow-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; All Rights Reserved. Light City Foundation. 2026.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            //document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            //document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+</body>
+</html>
